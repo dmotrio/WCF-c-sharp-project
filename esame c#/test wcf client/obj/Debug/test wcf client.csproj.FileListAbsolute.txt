@@ -1,0 +1,7 @@
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\bin\Debug\test wcf client.exe.config
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\bin\Debug\test wcf client.exe
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\bin\Debug\test wcf client.pdb
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\obj\Debug\test wcf client.csproj.AssemblyReference.cache
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\obj\Debug\test wcf client.csproj.CoreCompileInputs.cache
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\obj\Debug\test wcf client.exe
+C:\Users\dimoo\OneDrive\Desktop\esame c#\test wcf client\obj\Debug\test wcf client.pdb

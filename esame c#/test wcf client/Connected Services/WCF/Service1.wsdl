@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/wcfserver/Service1/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/wcfserver/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/wcfserver/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wcfserver" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_registertUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:registertUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registertUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registertUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUtente_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUtente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUtente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeletUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ModificaSaldo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificaSaldo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ModificaSaldo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificaSaldoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSaldo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSaldo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSaldo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSaldoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoginUtente_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginUtente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoginUtente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginUtenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertTransazione_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransazione" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertTransazione_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransazioneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TransazioniByIdUtente_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransazioniByIdUtente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TransazioniByIdUtente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransazioniByIdUtenteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="registertUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registertUser" message="tns:IService1_registertUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registertUserResponse" message="tns:IService1_registertUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUtente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUtente" message="tns:IService1_GetUtente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUtenteResponse" message="tns:IService1_GetUtente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeletUser" message="tns:IService1_DeletUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeletUserResponse" message="tns:IService1_DeletUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSaldo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ModificaSaldo" message="tns:IService1_ModificaSaldo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ModificaSaldoResponse" message="tns:IService1_ModificaSaldo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSaldo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSaldo" message="tns:IService1_GetSaldo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSaldoResponse" message="tns:IService1_GetSaldo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginUtente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoginUtente" message="tns:IService1_LoginUtente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginUtenteResponse" message="tns:IService1_LoginUtente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransazione">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertTransazione" message="tns:IService1_InsertTransazione_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertTransazioneResponse" message="tns:IService1_InsertTransazione_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransazioniByIdUtente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TransazioniByIdUtente" message="tns:IService1_TransazioniByIdUtente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TransazioniByIdUtenteResponse" message="tns:IService1_TransazioniByIdUtente_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="registertUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/registertUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUtente">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeletUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSaldo">
+      <soap:operation soapAction="http://tempuri.org/IService1/ModificaSaldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaldo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSaldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginUtente">
+      <soap:operation soapAction="http://tempuri.org/IService1/LoginUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransazione">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertTransazione" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransazioniByIdUtente">
+      <soap:operation soapAction="http://tempuri.org/IService1/TransazioniByIdUtente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/wcfserver/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

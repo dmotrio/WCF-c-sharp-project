@@ -1,0 +1,7 @@
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\bin\Debug\wcfserver.exe.config
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\bin\Debug\wcfserver.exe
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\bin\Debug\wcfserver.pdb
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\obj\Debug\wcfserver.csproj.AssemblyReference.cache
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\obj\Debug\wcfserver.csproj.CoreCompileInputs.cache
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\obj\Debug\wcfserver.exe
+C:\Users\dimoo\OneDrive\Desktop\esame c#\wcfserver\obj\Debug\wcfserver.pdb
